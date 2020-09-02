@@ -1,0 +1,14 @@
+{% block content %}
+<div class="container mb-sm-5 mt-sm-5">
+    <div class="row">
+        <div class="col-md-10 offset-md-1 col-sm-12">
+            <h3>{{ self.title }}</h3>
+            <p>{{ self.text }}</p>
+            <a href="{{self.external_url}}">Source</a><br>
+            <a href="{{self.local_page.url}}" class="float_home">
+                <i class="fa fa-home my-float"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
